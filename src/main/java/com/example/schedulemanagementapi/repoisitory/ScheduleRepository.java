@@ -24,4 +24,13 @@ public class ScheduleRepository {
     public Schedule findById(int id) {
         return scheduleMapper.findById(id);
     }
+
+    public int deleteById(int id) {
+        return scheduleMapper.deleteById(id);
+    }
+
+    // スケジュール更新
+    public int update(Schedule schedule) {
+        return scheduleMapper.update(schedule);
+    }
 }
